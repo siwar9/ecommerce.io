@@ -14,18 +14,97 @@ body {
 }
 
 a {
-  color: #5fcf80;
+  color: #444444;
   text-decoration: none;
 }
 
 a:hover {
-  color: #86db9f;
+  color: #F12D2D;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
+.box {
+  width:200px;
+  top:100%;
+  margin: 25px;
+}
+
+.slide-img {
+  height: 200px;
+  position: relative;
+}
+.slide-img img {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.detail-box {
+  width: 100%;
+display:100%;
+justify-content: space-between;
+align-items: center;
+box-sizing: border-box;
+font-family: calibri;
+}
+
+.detail-box .container {
+  color: #111;
+  font-weight:700;
+  letter-spacing: 0.5px;
+
+}
+.container p {
+  color:rgba(26,26,26,0.5);
+}
+.price {
+  color: #F12D2D;
+  font-weight:600;
+  font-size: 1.1rem;
+  font-family: poppins;
+  letter-spacing: 0.5px;
+}
+
+.buy-btn {
+  top:50%;
+  left:50%;
+  transform:translate(-0%,-100%);
+  width:160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color:#252525;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: calibri;
+  border-radius:20px;
+  
+}
+.buy-btn:hover {
+  color: #fff;
+  background-color: #F12D2D;
+  transition: all ease 0.3s;
+}
+.overlay {
+  visibility: hidden;
+}
+.slide-img:hover .overlay {
+  visibility: visible;
+}
+.slider {
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -109,12 +188,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
+-----------------------------------------------------------
+@media (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
-}
+}---*/
 
 /*--------------------------------------------------------------
 # Header
@@ -141,9 +220,10 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo a {
   color: #5C60D2;
 }
-
+/** size of the logo **/
 #header .logo img {
-  max-height: 80px;
+  max-width: 180px;
+  max-height: auto;
 }
 
 #header .logo1 img {
@@ -154,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 25px;
 }
 /**
-* Get Startet Button 
+* sign-in button 
 */
 .get-started-btn {
   margin-left: 22px;
@@ -208,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   color: #37423b;
   white-space: nowrap;
@@ -405,7 +485,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -424,23 +503,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h1 {
-  margin: px;
+  margin-left: 600px;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: #303030;
   font-family: "Poppins", sans-serif;
 }
 
 #hero h2 {
-  color: #eee;
-  margin: 10px 0 0 0;
+  color: #303030;
+  margin-left: 600px;
   font-size: 24px;
 }
 
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font: famil 1px;y: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 1px;
@@ -449,13 +528,15 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   transition: 0.5s;
   margin-top: 30px;
-  border: 2px solid #fff;
+  margin-left: 600px;
+  background-color:#5C60D2 ;
   color: #fff;
 }
 
 #hero .btn-get-started:hover {
-  background: #5fcf80;
-  border: 2px solid #5fcf80;
+  background: #fff;
+  color: #5C60D2;
+  border: 2px solid #5C60D2;
 }
 
 @media (min-width: 1024px) {
@@ -927,7 +1008,7 @@ section {
   background-color: #5fcf80;
 }
 
-@media (max-width: 767px) {
+@media screen {
   .testimonials .testimonial-wrap {
     padding-left: 0;
   }
@@ -1048,7 +1129,7 @@ section {
   margin-bottom: 0;
 }
 
-@media (max-width: 992px) {
+@media screen {
   .cource-details-tabs .nav-link {
     border: 0;
     padding: 15px;
@@ -1397,7 +1478,7 @@ section {
 #footer {
   color: #37423b;
   font-size: 14px;
-  background: #eef0ef;
+  background: #EEF9FE;
 }
 
 #footer .footer-top {
