@@ -24,36 +24,55 @@
 	<video autoplay muted loop>
 		<source src="assets/Blue and Black Clouds Background Loop.mp4" type="video/mp4">
 	</video>
-    <div class="container" id="container">
-	    <div class="form-container sign-in-container">
-		    <form action="#">
-                <br><br>
-		    	<h1>Sign in</h1>
-<br>
-<br>
-<br>
-			    <input type="email" placeholder="Email" />
-			    <input type="password" placeholder="Password" />
-			    <a class="forget" href="forgotpwd.html">Forgot your password?</a>
+	<div class="container" id="container">
+		<div class="form-container sign-up-container">
+			<form action="#">
+				<h1>Create Account</h1>
+				<input type="text"  placeholder="First Name" />
+					<input type="text" placeholder="Last Name" />
+					<input type="date" placeholder="Date" />
+					<input type="email" placeholder="Email" />
+					<input type="password" placeholder="Password" />
+					<a class="forget3" href="#">
+								<input type="checkbox" />
+								agree to the Terms of Service and have read the Privacy Policy.
+							</a>
+					<button>Submit</button>
+			</form>
+		</div>
+		<div class="form-container sign-in-container">
+			<form action="#">
+				<h1>Sign in</h1>
+				<br>
+	<br>
+				<input type="email" placeholder="Email" />
+				<input type="password" placeholder="Password" />
+				<a class="forget" href="forgotpwd.html">Forgot your password?</a>
                 <br>
                 
 			    <button>Sign In</button>
                 <a class="forget1" href="#">Don't have an account ? </a>
-                <a class="forget2" href="login.html">Sign Up Now!</a>
-		    </form>
-	    </div>
-	    <div class="overlay-container">
-		    <div class="overlay">
-			    
-			    <div class="overlay-panel overlay-right">
-			    	<h1>New to our Website?</h1>
-				    <p>Enter your personal details and start journey with us</p>
-				    <a href="login.html"><button class="ghost" id="signUp" >Create an account</button></a>
-			    </div>
-	    	</div>
-	    </div>
-    </div>
-
-</div>
+                <a class="forget2" href="#">Sign Up Now!</a>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>Already have an Account?</h1>
+					<br>
+					<button class="ghost" id="signIn">Sign In</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>New to our Website?</h1>
+					<p>Enter your personal details and start journey with us</p>
+					<button class="ghost" id="signUp">Sign Up</button>
+				</div>
+			</div>
+		</div>
+	</div>
     </body>
 </html>
+
+
+
+
